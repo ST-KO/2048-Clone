@@ -1,0 +1,104 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+hr{
+    width: 500px;
+}
+
+#board{
+    width: 400px;
+    height: 400px;
+
+    background-color: #cdc1b5;
+    border: 6px solid #bbada0;
+
+    margin: 0 auto;
+
+    display: flex; /* To make sure that tiles in the board<div> are in-line instead of stacking on each other*/
+    flex-wrap: wrap; /* To make sure that tiles in the board<div> are in-line instead of stacking on each other*/
+}
+
+.tile{
+/* Borad has 400px left to right and top to bottom. So each tile has 100px L-R and 100px T-B. */
+/* But to compensate 5px surrounding borders on each sides, width and height are set to 90px each instead of full 100px */
+/* For eg: 5px(top) + 90px + 5px(bottom) = 100px (Top - Bottom) */ /* 5px(left) + 90px + 5px(right) = 100px (Left - Right) */
+    width: 90px; 
+    height: 90px;
+    border: 5px solid #bbada0;
+    
+    font-size: 40px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------- Setting Tiles' Color ----------*/
+
+.x2{
+    background-color: #eee4da;
+    columns: #727371;
+}
+
+.x4{
+    background-color: #ece0ca;
+    columns: #727371;
+}
+
+.x8{
+    background-color: #f4b17a;
+    columns: #fff;
+}
+
+.x16{
+    background-color: #f59575;
+    columns: #fff;
+}
+
+.x32{
+    background-color: #f57c5f;
+    columns: #fff;
+}
+
+.x64{
+    background-color: #f65d3b;
+    columns: #fff;
+}
+
+.x128{
+    background-color: #edce71;
+    columns: #fff;
+}
+
+.x256{
+    background-color: #edcc63;
+    columns: #fff;
+}
+
+.x512{
+    background-color: #edc651;
+    columns: #fff;
+}
+
+.x1024{
+    background-color: #eec744;
+    columns: #fff;
+}
+
+.x2048{
+    background-color: #ecc230;
+    columns: #fff;
+}
+
+.x4096{
+    background-color: #fe3d3d;
+    columns: #fff;
+}
+
+.x8192{
+    background-color: #ff2020;
+    columns: #fff;
+}
